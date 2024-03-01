@@ -56,15 +56,16 @@ export default function Home() {
           <CardFooter className="space-x-4">
             <Button onClick={onEncrypt}>Hash</Button>
             <Button
-              onClick={() =>
+              onClick={() => {
+                navigator.clipboard.writeText(encryptedHash);
                 toast("Copy Successfully", {
                   description: "Your hash valued has been copied to clipboard",
                   action: {
                     label: "Close",
                     onClick: () => undefined,
                   },
-                })
-              }
+                });
+              }}
               variant="outline"
             >
               Copy Value
