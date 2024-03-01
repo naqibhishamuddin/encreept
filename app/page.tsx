@@ -2,20 +2,12 @@
 
 import { TypographyH1, TypographyLead } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
-
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import Balancer from "react-wrap-balancer";
@@ -39,10 +31,10 @@ export default function Home() {
     <main className="flex flex-col justify-center min-h-screen items-center px-6 py-12">
       <section className="w-full max-w-[980px] mx-auto flex flex-col items-center gap-4">
         <TypographyH1>
-          <Balancer>Encreeept is a better way for SHA-256 hashing</Balancer>
+          <Balancer>Encreept is a better way for SHA-256 hashing</Balancer>
         </TypographyH1>
         <TypographyLead>
-          With Encreeept, you don't need to hire a hacker to hashing your
+          With Encreept, you don't need to hire a hacker to hashing your
           plaintext using the SHA-256 algorithm.
         </TypographyLead>
         <Card className="w-full max-w-[600px] mt-4">
@@ -80,7 +72,7 @@ export default function Home() {
           </CardFooter>
         </Card>
       </section>
-      <footer className="absolute bottom-8">
+      <footer className="mt-8 sm:absolute sm:bottom-8">
         <HoverCard>
           <HoverCardTrigger className="text-xs">
             Made possible by Naqib Hishamuddin
