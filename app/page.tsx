@@ -10,6 +10,12 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card";
+
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import Balancer from "react-wrap-balancer";
@@ -30,7 +36,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex justify-center min-h-screen items-center px-6 py-12">
+    <main className="flex flex-col justify-center min-h-screen items-center px-6 py-12">
       <section className="w-full max-w-[980px] mx-auto flex flex-col items-center gap-4">
         <TypographyH1>
           <Balancer>Encreeept is a better way for SHA-256 hashing</Balancer>
@@ -74,6 +80,17 @@ export default function Home() {
           </CardFooter>
         </Card>
       </section>
+      <footer className="absolute bottom-8">
+        <HoverCard>
+          <HoverCardTrigger className="text-xs">
+            Made possible by Naqib Hishamuddin
+          </HoverCardTrigger>
+          <HoverCardContent className="text-xs">
+            By the time of writing, this website was made because I couldn't
+            find the site Vivishen used for hashing code.
+          </HoverCardContent>
+        </HoverCard>
+      </footer>
     </main>
   );
 }
