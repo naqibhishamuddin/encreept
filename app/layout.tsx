@@ -5,14 +5,15 @@ import { Provider } from "react-wrap-balancer";
 import { cn } from "../lib/utils";
 import { Toaster } from "@/components/ui/sonner";
 
-export const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
 export const metadata: Metadata = {
   title: "Encreept - SHA-256 Hashing",
   description: "A better way to perform SHA-256 hashing",
 };
+
+const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
 
 export default function RootLayout({
   children,
