@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 
 export function TypographyH1({ children }: { children?: ReactNode }) {
   return (
@@ -14,4 +14,8 @@ export function TypographyLead({ children }: { children?: ReactNode }) {
       {children}
     </p>
   );
+}
+
+export function TypographyMuted({ children }: { children?: ReactNode }) {
+  return <p className="text-sm text-muted-foreground">{children}</p>;
 }
